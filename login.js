@@ -15,7 +15,7 @@ const activateButton = function () {
   $btnLogin.classList.add("btn-hoverEffect");
 };
 
-// 로그인 버튼 비할성화
+// 로그인 버튼 비활성화
 const disabledButton = function () {
   $btnLogin.style.backgroundColor = "rgb(0, 149, 246, 0.3)";
   $btnLogin.disabled = true;
