@@ -1,0 +1,258 @@
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: white;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #e1e1e1;
+  top: 0;
+  height: 70px;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  margin-top: 0px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.bar-search {
+  position: relative;
+}
+.bar-search input {
+  width: 260px;
+  padding: 8px 16px 8px 40px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.bar-search input:focus {
+  outline: none;
+}
+.img-explore {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  width: 15px;
+}
+.list-nav {
+  display: flex;
+  list-style: none;
+  margin-top: 0px;
+}
+.list-nav li img {
+  width: 25px;
+  height: 24px;
+  margin: 5px 23px 0 0;
+}
+.img-navProfile {
+  border-radius: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 6%;
+  }
+.container {
+  max-width: 850px;
+  max-height: 988.63px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  }
+.profile-info {
+  flex: 1;
+  margin-left: 30px;
+  }
+.username {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  }
+.btn-edit {
+  font-size: 14px;
+  padding: 6px 12px 6px 12px;
+  margin-left: 80px;
+  border-radius: 10px;
+  background-color: #efefef;
+}
+.btn-story { 
+  font-size: 14px;
+  padding: 6px 12px 6px 12px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.option img {
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+}
+.profile_edit {
+  display: flex;
+}
+.stats {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  }
+.stat {
+  flex: 1;
+  text-align: center;
+  }
+.new-story img {
+  width: 85px;
+  height: 85px;
+}
+.new {
+  margin: 5px 0 0 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+.posts,
+.followers,
+.following {
+  font-size: 18px;
+  }
+.posts strong,
+.followers strong,
+.following strong {
+  display: block;
+  font-size: 24px;
+  }
+  hr {
+    width: 800px;
+    margin-left: 0px;
+  }
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 256px);
+  grid-gap: 15px;
+  }
+.post-item {
+  width: 256px;
+  height: 256px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+  }
+.post-item img {
+  width: 256px;
+  height: 256px;
+  }
+/*id검색 상자*/
+.box-filteredId {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 375px;
+  height: 375px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  overflow: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+.box-recentSearch {
+  position: relative;
+}
+.title-recentSearch {
+  position: absolute;
+  color: #262626;
+  font-weight: bold;
+  font-size: 16px;
+  top: 10px;
+  left: 5px;
+  margin: 10px 15px;
+}
+.content-recentSearch {
+  position: absolute;
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: bold;
+  top: 180px;
+  left: 110px;
+}
+
+.filteredId {
+  /* display: inline-block; */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 0 7px 0;
+}
+.filteredImg {
+  display: inline-block;
+  margin: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+.wrapFiltered {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapText {
+  display: flex;
+  flex-direction: column;
+}
+.filteredName {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+/* 프로필 메뉴 */
+.list-profile {
+  position: relative;
+}
+.wrap-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  width: 230px;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.wrap-menu div {
+  display: flex;
+}
+.menu-profile,
+.menu-bookmark,
+.menu-setting,
+.menu-change {
+  padding: 0 0 25px 0;
+}
+.wrap-menu div img {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+}
+.wrap-menu div a,
+.wrap-menu a {
+  font-size: 14px;
+  color: #262626;
+  text-decoration: none;
+}

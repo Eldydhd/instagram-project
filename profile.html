@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Instagram Page</title>
+<style>
+  @import url(profile.css);
+  @import url(common.css);
+</style>
+</head>
+<body>
+<header class="header">
+  <h1><a href="main.html">Instagram</a></h1>
+  <div class="bar-search">
+    <img class="img-explore" src="image/explore.png" alt="돋보기 아이콘"/>
+    <input class="input-searchBar" type="text" placeholder="검색"/>
+     <div class="box-filteredId">
+      <div class="box-recentSearch">
+        <p class="title-recentSearch">최근 검색 항목</p>
+        <p class="content-recentSearch">최근 검색 내역 없음.</p>
+      </div>
+    </div> 
+  </div>
+  <nav>
+    <ul class="list-nav">
+      <li><img src="image/home.png" alt="홈 아이콘"/></li>
+      <li><img src="image/send.png" alt="다이렉트 메시지 아이콘"/></li>
+      <li><img src="image/add.png" alt="게시물 추가 아이콘"/></li>
+      <li><img src="image/compass.png" alt="탐색 아이콘"/></li>
+      <li><img src="image/heart.png" alt="좋아요 아이콘"/></li>
+      <li class="list-profile">
+        <img
+          class="img-navProfile"
+          src="image/candy.jpg"
+          alt="프로필 이미지"
+        />
+
+           <div class="wrap-menu">
+            <div class="menu-profile">
+              <img src="image/user.png" alt="프로필 아이콘"/>
+              <a href="profile.html">프로필</a>
+            </div>
+            <div class="menu-bookmark">
+              <img src="image/bookmark.png" alt="프로필 아이콘"/>
+              <a href="#">저장됨</a>
+            </div>
+            <div class="menu-setting">
+              <img src="image/setting.png" alt="프로필 아이콘"/>
+              <a href="#">설정</a>
+            </div>
+            <div class="menu-change">
+              <img src="image/change.png" alt="프로필 아이콘"/>
+              <a href="#">계정 전환</a>
+            </div>
+            <div class="menu-logout">
+              <a href="index.html">로그아웃</a>
+            </div>
+          </div> 
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+<div class="container">
+    <div class="profile">
+        <img src="image/candy.jpg" alt="Profile Picture">
+        <div class="profile-info">
+          <div class="profile_edit">
+            <div class="username">candy_0426</div>
+            <a href="#" class="edit-profile">
+              <button class="btn-edit">프로필 편집</button>
+            </a>
+            <a href="#" class="edit-story">
+              <button class="btn-story">보관된 스토리 보기</button>    
+            </a>
+            <div class="option">
+              <img src="image/option.png" alt="option Picture">
+            </div>
+              </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="posts"><strong>6</strong> 게시물</div>
+                </div>
+                <div class="stat">
+                    <div class="followers"><strong>100</strong>팔로워</div>
+                </div>
+                <div class="stat">
+                    <div class="following"><strong>100</strong> 팔로우</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="new-story">
+        <img src="image/plusicon.png" alt="Plus Picture">
+        <a href="#"></a>
+      </div>
+      <p class="new"><strong>신규</strong></p>
+    <hr class="hr">
+    <h2>게시물</h2>
+    <div class="post-list">
+        <div class="post-item" draggable="true"><img src="image/강아지11_01.gif" alt="Post 1"></div>
+        <div class="post-item" draggable="true"><img src="image/강아지11_02.gif" alt="Post 2"></div>
+        <div class="post-item" draggable="true"><img src="image/강아지11_03.gif" alt="Post 3"></div>
+        <div class="post-item" draggable="true"><img src="image/강아지11_04.gif" alt="Post 4"></div>
+        <div class="post-item" draggable="true"><img src="image/강아지11_05.gif" alt="Post 5"></div>
+        <div class="post-item" draggable="true"><img src="image/강아지11_06.gif" alt="Post 6"></div>
+    </div>
+</div>
+
+</body>
+<script src="profile.js"></script>
+</main>
+</html>
