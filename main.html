@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    @import url(main.css);
+    @import url(common.css);
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1><a href="main.html">Instagram</a></h1>
+    <div class="bar-search">
+      <img class="img-explore" src="image/explore.png" alt="돋보기 아이콘"/>
+      <input class="input-searchBar" type="text" placeholder="검색"/>
+      <div class="box-filteredId">
+        <div class="box-recentSearch">
+          <p class="title-recentSearch">최근 검색 항목</p>
+          <p class="content-recentSearch">최근 검색 내역 없음.</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul class="list-nav">
+        <li><img src="image/home.png" alt="홈 아이콘"/></li>
+        <li><img src="image/send.png" alt="다이렉트 메시지 아이콘"/></li>
+        <li><img src="image/add.png" alt="게시물 추가 아이콘"/></li>
+        <li><img src="image/compass.png" alt="탐색 아이콘"/></li>
+        <li><img src="image/heart.png" alt="좋아요 아이콘"/></li>
+        <li class="list-profile">
+          <img
+            class="img-navProfile"
+            src="image/candy.jpg"
+            alt="프로필 이미지"
+          />
+
+            <div class="wrap-menu">
+              <div class="menu-profile">
+                <img src="image/user.png" alt="프로필 아이콘"/>
+                <a href="profile.html">프로필</a>
+              </div>
+              <div class="menu-bookmark">
+                <img src="image/bookmark.png" alt="프로필 아이콘"/>
+                <a href="#">저장됨</a>
+              </div>
+              <div class="menu-setting">
+                <img src="image/setting.png" alt="프로필 아이콘"/>
+                <a href="#">설정</a>
+              </div>
+              <div class="menu-change">
+                <img src="image/change.png" alt="프로필 아이콘"/>
+                <a href="#">계정 전환</a>
+              </div>
+              <div class="menu-logout">
+                <a href="login.html">로그아웃</a>
+              </div>
+            </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <div class="box-story">
+        <li>
+          <img
+            class="img-profile-56px img-story"
+            src="image/apple.jpg"
+            alt="프로필 이미지"
+          >
+          <p class="name-story">apple_01</p>
+        </li>
+        <li>
+          <img
+            class="img-profile-56px img-story"
+            src="image/peach.jpg"
+            alt="프로필 이미지"
+          >
+          <p class="name-story">peach_01</p>
+        </li>
+      </div>
+
+      <div>
+        <article class="box-feed">
+          <div class="head-feed">
+            <div class="profile-feed">
+              <img 
+              class="img-profile-32px"
+              src="image/apple_profile.jpg"
+              alt="프로필 이미지"
+            >
+            <div>
+              <p class="userName-feed">apple_01</p>
+              <p class="location-feed">Seoul, korea</p>
+            </div>
+          </div>
+          <img class="icon-more" src="image/more.png" alt="더보기 아이콘">
+        </div>
+
+          <img class="img-feed" src="image/apple.jpg" alt="피드 이미지">
+
+          <div class="icon-feed">
+            <div>
+              <img class="img-icon" src="image/heart.png" alt="하트 아이콘">
+              <img class="img-icon" src="image/chat.png" alt="댓글 아이콘">
+              <img
+                class="img-icon"
+                src="image/send.png"
+                alt="다이렉트 메시지 아이콘"
+              >
+            </div>
+          <img
+            class="img-icon"
+            src="image/bookmark.png"
+            alt="북마크 아이콘"
+          >
+        </div>
+
+        <p class="text-like">좋아요 120개</p>
+
+        <div class="box-comment"></div>
+        <hr style="border:solid 1px #e1e1e1;">
+
+        <div class="box-chat">
+          <form>
+            <img class="img-icon" src="image/smile.png" alt="이모지 아이콘">
+            <input
+              class="input-chat"
+              type="text"
+              placeholder="댓글 달기..."
+            >
+            <button class="btn-chat" type="submit">게시</button>
+          </form>
+        </div>
+        </article>
+      </div>
+    </div>
+
+    <div>
+      <div class="box-aside">
+        <div class="box-myProfile">
+          <div>
+            <img
+              class="img-profile-56px"
+              src="image/candy.jpg"
+              alt="프로필 이미지"
+            >
+            <p>candy_0426</p>
+          </div>
+          <button class="btn-blue" type="button">전환</button>
+        </div>
+  
+        <div class="box-recommend">
+          <div class="head-recommend">
+            <h2>회원님을 위한 추천</h2>
+            <button class="btn-recommend-all" type="button">모두 보기</button>
+          </div>
+          <div class="box-recommend-profile">
+            <div class="profile-recommend">
+              <img
+                class="img-profile-32px"
+                src="image/watermelon.jpg"
+                alt="프로필 이미지"
+              >
+            <div>
+              <p class="userName-recommend">watermelon_03</p>
+              <p class="follower-recommend">apple_01님이 팔로우합니다</p>
+            </div>
+          </div>
+          <button class="btn-blue" type="button">팔로우</button>
+        </div>
+        <div class="box-recommend-profile">
+          <div class="profile-recommend">
+            <img
+              class="img-profile-32px"
+              src="image/lemon.jpg"
+              alt="프로필 이미지"
+            >
+            <div>
+              <p class="userName-recommend">lemon_04</p>
+              <p class="follower-recommend">candy_0426님이 팔로우합니다</p>
+            </div>
+          </div>
+          <button class="btn-blue" type="button">팔로우</button>
+        </div>
+        </div>
+      </div>
+  
+      <div class="footer">
+        <div class="footer-info">
+          <a href="#">소개 ·</a>
+          <a href="#">도움말 ·</a>
+          <a href="#">홍보센터 ·</a>
+          <a href="#">API ·</a>
+          <a href="#">채용 정보 ·</a>
+          <a href="#">개인정보처리방침 ·</a>
+          <a href="#">약관 ·</a>
+          <a href="#">위치 ·</a>
+          <a href="#">언어</a>
+        </div>
+        <p>©2024 INSTAGRAM FROM JUWON</p>
+      </div>
+    </div>
+
+ 
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
